@@ -1,0 +1,16 @@
+<h1>Your Cart</h1>
+
+<div *ngIf="cartItems.length === 0" class="empty-cart">
+  Cart is empty
+</div>
+
+<div class="cart-list" *ngIf="cartItems.length > 0">
+  <div class="cart-item" *ngFor="let item of cartItems">
+    <img [src]="item.imageUrl || 'https://via.placeholder.com/80'" alt="{{ item.name }}">
+    <div>
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+      <p><b>₹{{ item.price }}</b></p>
+    </div>
+  </div>
+</div>
