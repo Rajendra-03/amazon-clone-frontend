@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = 'http://localhost:8080/products';
+  private apiUrl = 'https://amazon-clone-backend-r1dx.onrender.com/products';
 
   constructor(private http: HttpClient) {}
 

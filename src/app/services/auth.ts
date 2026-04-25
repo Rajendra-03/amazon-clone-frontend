@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:8080/users';
+  private apiUrl = 'https://amazon-clone-backend-r1dx.onrender.com/users';
 
   constructor(private http: HttpClient) {}
 
