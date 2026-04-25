@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class OrderService {
-  private apiUrl = 'http://localhost:8080/orders';
+  private apiUrl = 'https://amazon-clone-backend-r1dx.onrender.com/orders';
 
   constructor(private http: HttpClient) {}
 
